@@ -1,6 +1,6 @@
 package exercises;
 
-public class GcdOfStrings {
+public class GcdOfStrings_1071 {
     public static void main(String[] args) {
         String result = gcdOfStrings("ABABABABABAB", "ABAB");
         System.out.println(result);
