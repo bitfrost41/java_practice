@@ -20,7 +20,7 @@ public class ReverseVowels_345 {
 
             // if vowel, record index and vowel
             if ("aeiouAEIOU".indexOf(s.charAt(i)) != -1) {
-                vowelIndexes.addFirst(i); // insert as first elem
+                vowelIndexes.add(0, i); // insert as first elem
                 vowels.add(s.charAt(i));
             }
         }
