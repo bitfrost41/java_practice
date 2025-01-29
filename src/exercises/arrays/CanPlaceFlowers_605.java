@@ -1,4 +1,4 @@
-package exercises;
+package exercises.arrays;
 
 public class CanPlaceFlowers_605 {
     public static void main(String[] args) {

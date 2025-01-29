@@ -1,4 +1,4 @@
-package exercises;
+package exercises.arrays;
 
 public class MergeStringsAlternatively_1769 {
     public static void main(String[] args) {

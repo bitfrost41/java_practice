@@ -1,7 +1,6 @@
-package exercises;
+package exercises.arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class KidsWithGreatestNumberOfCandies_1431 {

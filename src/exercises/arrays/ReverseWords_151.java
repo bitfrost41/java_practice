@@ -1,4 +1,4 @@
-package exercises;
+package exercises.arrays;
 
 public class ReverseWords_151 {
     public static void main(String[] args) {
