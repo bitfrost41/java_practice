@@ -32,8 +32,6 @@ public class CountNumberOfDeletions {
             }
 
         }
-
-
         return ctr;
     }
 
