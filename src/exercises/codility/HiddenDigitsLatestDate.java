@@ -1,5 +1,10 @@
 package exercises.codility;
 
+// Given a date (MM-DD) with missing digits, return the latest possible date.
+// Return XX-XX if not possible.
+// Input: 0?-3?, Output: 09-30
+// Input: ??-?2, Output: 12-22
+// Input: 4?-20, Output: XX-XX
 public class HiddenDigitsLatestDate {
     public static void main(String[] args) {
 

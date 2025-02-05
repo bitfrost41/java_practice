@@ -1,5 +1,7 @@
 package exercises.codility;
 
+// Delete characters in String s so that all "A" are before all "B".
+// Return the number of times a character must be deleted.
 public class CountNumberOfDeletions {
     public static void main(String[] args) {
 

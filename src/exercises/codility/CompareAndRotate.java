@@ -1,5 +1,7 @@
 package exercises.codility;
 
+// Rotate the string (i.e., last character becomes 1st character, 1st character becomes 2nd character, etc...).
+// Return the number of times the first and last characters of String s are the same.
 public class CompareAndRotate {
     public static void main(String[] args) {
 
