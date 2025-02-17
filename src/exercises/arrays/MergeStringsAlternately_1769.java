@@ -1,6 +1,6 @@
 package exercises.arrays;
 
-public class MergeStringsAlternatively_1769 {
+public class MergeStringsAlternately_1769 {
     public static void main(String[] args) {
         String result = mergeAlternately("test1", "test2");
         System.out.println(result);
