@@ -10,9 +10,32 @@ public class ContainerWithMostWater_11 {
 
     private static int maxArea(int[] height) {
 
-        // solution
+        int maxArea = 0; // highest area found so far
+        int left = 0; // left index
+        int right = height.length - 1; // right index
 
-        return 0;
+        while (left < right) {
+
+            int width = right - left; // get width
+            int area;
+
+            if (height[left] <= height[right]) {
+                // include scenario where left = right
+                area = height[left] * width; // get area
+                left++; // move left counter to 1 step to right
+            } else {
+                area = height[right] * width; // get area
+                right--;  // move right counter 1 step to left
+            }
+
+            // check for highest value found so far
+            if (area > maxArea) {
+                maxArea = area;
+            }
+
+        }
+
+        return maxArea;
     }
 
 }
