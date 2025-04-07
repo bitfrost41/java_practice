@@ -12,7 +12,7 @@ which, given a string S of length N representing arrow keys pressed by each of t
 public class PlayerMovement {
     public static void main(String[] args) {
 
-        String S = "^>VV<>";
+        String S = "^>vv<>";
 
         int result = solution(S);
         System.out.println(result);
@@ -46,7 +46,7 @@ public class PlayerMovement {
                 }
             } else if (cs[i] == '^') {
                 isMoveSuccessful = true; // automatic success on move up
-            } else if (cs[i] == 'V') {
+            } else if (cs[i] == 'v') {
                 isMoveSuccessful = true; // automatic success on move down
             }
 
