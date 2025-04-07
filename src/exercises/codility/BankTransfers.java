@@ -29,33 +29,33 @@ public class BankTransfers {
         int minB = 0;
 
         for (int i = 0; i < V.length; i++) {
-            if (recipientBanks[i] == 'A') {
+            if (recipientBanks[i] == 'B') { // bank B receives money
 
-                // move funds
-                balanceA = balanceA + V[i];
-                balanceB = balanceB - V[i];
-
-                // if balance of B is less than minimum of A, assign current balance of B as minimum
-                if (balanceB < minA) {
-                    minB = balanceB;
-                }
-
-            } else if (recipientBanks[i] == 'B') {
-
-                // move funds
+                // move money around
                 balanceB = balanceB + V[i];
                 balanceA = balanceA - V[i];
 
-                // if balance of A is less than minimum of B, assign current balance of A as minimum
-                if (balanceA < minB) {
+                // check for minimum
+                if (balanceA < minA) {
                     minA = balanceA;
                 }
+            } else if (recipientBanks[i] == 'A') { // bank A receives money
 
+                // move money around
+                balanceA = balanceA + V[i];
+                balanceB = balanceB - V[i];
+
+                // check for minimum
+                if (balanceB < minB) {
+                    minB = balanceB;
+                }
             }
+
+            minAmounts[0] = Math.abs(minA);
+            minAmounts[1] = Math.abs(minB);
         }
 
-        minAmounts[0] = Math.abs(minA);
-        minAmounts[1] = Math.abs(minB);
+
         return minAmounts;
     }
 
